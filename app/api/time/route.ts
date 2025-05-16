@@ -1,5 +1,5 @@
 export async function GET() {
     const now = new Date();
-    const formatted = now.toLocaleString('ja-JP', { hour12: false }) ;
+    const formatted = now.toLocaleString('ja-JP') ;
     return Response.json({ time: formatted });
   }
